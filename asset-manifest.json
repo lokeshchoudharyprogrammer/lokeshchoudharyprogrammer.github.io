@@ -1,21 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.89c6e130.css",
-    "main.js": "/static/js/main.04edddb2.js",
+    "main.css": "/static/css/main.d8cf9fb7.css",
+    "main.js": "/static/js/main.23308aae.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/resume.pdf": "/static/media/resume.c5134c49bb0456974511.pdf",
-    "static/media/worldBook.jpg": "/static/media/worldBook.18755c40df2bca33ebf1.jpg",
-    "static/media/fitfactory.jpg": "/static/media/fitfactory.fe2bd75e048bdef3b455.jpg",
-    "static/media/lavishLook.jpg": "/static/media/lavishLook.08344ca3ddc795dff7b6.jpg",
-    "static/media/monday.jpg": "/static/media/monday.b7666428a969be6f2600.jpg",
-    "static/media/mypic.png": "/static/media/mypic.b70f64b513bed778f269.png",
+    "static/media/lokesh-choudhary-resume.pdf": "/static/media/lokesh-choudhary-resume.322112777fdd0647b044.pdf",
     "index.html": "/index.html",
-    "main.89c6e130.css.map": "/static/css/main.89c6e130.css.map",
-    "main.04edddb2.js.map": "/static/js/main.04edddb2.js.map",
+    "main.d8cf9fb7.css.map": "/static/css/main.d8cf9fb7.css.map",
+    "main.23308aae.js.map": "/static/js/main.23308aae.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89c6e130.css",
-    "static/js/main.04edddb2.js"
+    "static/css/main.d8cf9fb7.css",
+    "static/js/main.23308aae.js"
   ]
 }

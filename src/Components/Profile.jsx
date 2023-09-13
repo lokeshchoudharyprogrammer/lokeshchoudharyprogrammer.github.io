@@ -47,8 +47,10 @@ const Profile = () => {
                                     id='resume-button-2'
                                     onClick={handleDownloadPDF}>
                                     <span style={{ display: "flex", alignItems: "center" }}> <AiOutlineDownload />
+                                    
                                         &nbsp;Resume</span>
                                 </button>
+
 
 
                             </a>

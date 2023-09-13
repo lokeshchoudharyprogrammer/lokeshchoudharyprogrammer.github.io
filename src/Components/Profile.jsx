@@ -15,7 +15,7 @@ const Profile = () => {
     };
     return (
         <>
-            <Container maxW="container.lg">
+            <Container maxW="container.lg" id='about'>
                 <h1 className="project-heading" style={{ color: ' #c110ef', paddingLeft: "39px", marginTop: "73px" }}>
                     <strong className="purple">About </strong>
                 </h1>
@@ -47,7 +47,7 @@ const Profile = () => {
                                     id='resume-button-2'
                                     onClick={handleDownloadPDF}>
                                     <span style={{ display: "flex", alignItems: "center" }}> <AiOutlineDownload />
-                                    
+
                                         &nbsp;Resume</span>
                                 </button>
 

@@ -14,6 +14,7 @@ const GithubCal = () => {
                 <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokeshchoudharyprogrammer&amp;layout=compact" alt='' />
                 <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=lokeshchoudharyprogrammer&amp;show_icons=true&amp;theme=radical" alt='' />
             </div>
+            <GitHubCalendar className='react-activity-calendar' username="lokeshchoudharyprogrammer" />
 
         </>
     )

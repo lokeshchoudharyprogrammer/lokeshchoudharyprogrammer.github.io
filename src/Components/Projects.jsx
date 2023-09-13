@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCards from "./ProjectCard";
-
+import { Label } from 'semantic-ui-react'
 
 function Projects() {
+    const myArray = ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Chakra UI']
+    const myArray2 = ['HTML', 'CSS', 'JavaScript']
     return (
         <Container fluid className="project-section" id='projects'>
 
@@ -24,6 +26,9 @@ function Projects() {
                                 description="Developed a full-stack web application using React.js, Node.js, Express.js, and MongoDB."
                                 ghLink="https://github.com/RutuvikP/ClearDekho-Lenskart-Clone"
                                 demoLink="https://cleardekho-rutuvikp.vercel.app/"
+                                skills={['HTML', 'CSS', 'JavaScript']}
+                                myArrayProp={myArray}
+
                             />
                         </Col>
 
@@ -37,6 +42,7 @@ function Projects() {
                                 description="Boost your team’s alignment, efficiency, and productivity by customizing any workflow to fit your needs."
                                 ghLink="https://github.com/lokeshchoudharyprogrammer/superficial-point-8316"
                                 demoLink="https://unrivaled-tulumba-195798.netlify.app/"
+                                myArrayProp={myArray2}
                             />
                         </Col>
 
@@ -50,6 +56,7 @@ function Projects() {
                                 description="E-commerce is the buying and selling of goods and services online.."
                                 ghLink="https://github.com/lokeshchoudharyprogrammer/ecommerce-app"
                                 demoLink="https://unrivaled-tulumba-195798.netlify.app/"
+                                myArrayProp={myArray}
                             />
                         </Col>
 
@@ -57,12 +64,27 @@ function Projects() {
                     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                         <Col md={4} className="project-card">
                             <ProjectCards
-                                imgPath={'https://images04.nicepage.com/feature/461183/website-blog.jpg'}
+                                imgPath={'https://camo.githubusercontent.com/76c562e2c3b1559dd40eb41723210165de31ef9cce213da2fb50d1c7a5a2de3e/68747470733a2f2f692e6962622e636f2f726378565648432f63616c6c6170702e706e67'}
                                 isBlog={false}
-                                title="Blog Application"
-                                description="A blog app is a application designed to facilitate the creation, publication, and management of blog content."
-                                ghLink="https://github.com/lokeshchoudharyprogrammer/ecommerce-app"
-                                demoLink="https://unrivaled-tulumba-195798.netlify.app/"
+                                title="Infinity Call"
+                                description="Introducing our innovative video call app, seamlessly connecting users through high-quality video and audio communication. Enjoy group calls, screen sharing, and secure conversations, redefining virtual interactions for both personal and professional use."
+                                ghLink="https://github.com/lokeshchoudharyprogrammer/zoom-clone-app"
+                                demoLink="https://callingapp.vercel.app/"
+                                myArrayProp={['React','Node.js', 'Zegocloud','FireBase']}
+                            />
+                        </Col>
+
+                    </Row>
+                    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                        <Col md={4} className="project-card">
+                            <ProjectCards
+                                imgPath={'https://lokeshchoudhary.gallerycdn.vsassets.io/extensions/lokeshchoudhary/grammar-correction-open-ai/0.1.7/1694601849434/Microsoft.VisualStudio.Services.Icons.Default'}
+                                isBlog={false}
+                                title="Grammar correction Open AI"
+                                description="Visual Studio Code extension allows you to correct grammar and improve your writing using the OpenAI API."
+                                ghLink="https://github.com/lokeshchoudharyprogrammer/Grammar-Correction-VSCode-Extension"
+                                demoLink="https://marketplace.visualstudio.com/items?itemName=LokeshChoudhary.grammar-correction-open-ai"
+                                myArrayProp={['React','OpenAI','VS Code API']}
                             />
                         </Col>
 

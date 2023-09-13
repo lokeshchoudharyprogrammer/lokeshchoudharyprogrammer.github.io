@@ -12,7 +12,7 @@ const Contactus = () => {
     const data = {
         name, lastname, email, numbers, sms
     }
-    console.clear(data)
+  
     const handleSubmit = (e) => {
 
         e.preventDefault();

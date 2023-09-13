@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { Label } from 'semantic-ui-react'
 
 function ProjectCards(props) {
+    // console.log(props.skills)
+    const myArray = props.myArrayProp;
+
     return (
         <Card className="project-card-view">
             <Card.Img variant="top" src={props.imgPath} alt="card-img" />
             <Card.Body>
                 <Card.Title className='project-title' >{props.title}</Card.Title>
-                <Card.Text style={{ textAlign: "justify" ,color:"black"}}>
+                <Card.Text className='project-description' style={{ textAlign: "justify", color: "black" }}>
                     {props.description}
                 </Card.Text>
                 <div class='btns-project'>
@@ -35,6 +39,17 @@ function ProjectCards(props) {
                         </Button>
                     )}
 
+                </div>
+                <div>
+                    <p style={{ color: "black" }} className='skills-card'>{
+
+                        myArray && myArray.map((item, index) => (
+                            <Label as='a' color='blue'>
+
+                                {item}
+                            </Label>
+                        ))
+                    }</p>
                 </div>
             </Card.Body>
         </Card>

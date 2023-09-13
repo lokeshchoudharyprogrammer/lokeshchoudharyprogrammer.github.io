@@ -59,10 +59,10 @@ export default function Simple() {
                         <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
 
                             <NavLink href={'#skills'}>Home</NavLink>
-                            <NavLink href={'#projects'}>Project</NavLink>
-                            <NavLink href={'#contact'}>Contact</NavLink>
                             <NavLink href={'#contact'}>About</NavLink>
                             <NavLink href={'#skills'}>Skills</NavLink>
+                            <NavLink href={'#projects'}>Project</NavLink>
+                            <NavLink href={'#contact'}>Contact</NavLink>
                             <NavLink href={'#resume'}>Resume</NavLink>
 
                         </HStack>

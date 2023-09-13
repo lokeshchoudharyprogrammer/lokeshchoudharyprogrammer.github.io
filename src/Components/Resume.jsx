@@ -26,6 +26,7 @@ function Resume() {
                     <a  id='resume-link-1' href={pdf} target="_blank" rel="noopener noreferrer" download>
                        
                         <button variant="primary"
+                        id='resume-button-1'
                             href={pdf}
                             target="_blank"
                             style={{ maxWidth: "250px" }}

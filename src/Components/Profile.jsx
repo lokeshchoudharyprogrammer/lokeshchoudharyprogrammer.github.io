@@ -33,11 +33,10 @@ const Profile = () => {
                             <strong className="main-name"> 𝐿𝑜𝓀𝑒𝓈𝒽 𝒞𝒽𝑜𝓊𝒹𝒽𝒶𝓇𝓎</strong>
                         </h1>
                         <h1 style={{ color: "black", paddingLeft: "30px", paddingTop: '15px', fontWeight: '600' }}>
-                            I am a skilled web developer with expertise in HTML, CSS, JavaScript, React, Node.js, <br /> Express.js, MongoDB and
-                            TypeScript, capable of building dynamic and feature-rich web applications.
+                            I'm a skilled MERN developer with 1200 hours of coding experience and expertise in prompt engineering for AI systems like GPT-3.5. My focus is on building dynamic web applications and I'm eager to contribute my skills to innovative organizations that value growth and innovation. Passionate about pushing technological boundaries, I'm committed to delivering exceptional results in both web development and AI integration.
                         </h1>
 
-                        <Row  style={{ justifyContent: "center", position: "relative", display: "flex",marginTop:"20px" }}>
+                        <Row style={{ justifyContent: "center", position: "relative", display: "flex", marginTop: "20px" }}>
                             <a id='resume-link-2' href={pdf} target="_blank" rel="noopener noreferrer" download>
 
                                 <button variant="primary"
@@ -45,6 +44,7 @@ const Profile = () => {
                                     target="_blank"
                                     style={{ maxWidth: "250px" }}
                                     class='resume-btn'
+                                    id='resume-button-2'
                                     onClick={handleDownloadPDF}>
                                     <span style={{ display: "flex", alignItems: "center" }}> <AiOutlineDownload />
                                         &nbsp;Resume</span>

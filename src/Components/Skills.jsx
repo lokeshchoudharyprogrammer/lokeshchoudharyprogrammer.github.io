@@ -86,6 +86,18 @@ const Skills = () => {
                     <Col xs={4} md={2} className="tech-icons">
                        <img src='https://static-00.iconduck.com/assets.00/netlify-icon-512x512-p4tqk3ec.png' width={"60px"} alt='' />
                     </Col>
+                    <Col xs={4} md={2} className="tech-icons">
+                       <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXQrNCdtZt8ZYkzZSLp8dn-EMPQYwjKsOxyJBSllye3Ht80Uo34i5LszZ7DkHYXTnDmw8&usqp=CAUhttps://static-00.iconduck.com/assets.00/netlify-icon-512x512-p4tqk3ec.png' width={"59px"} alt='' />
+                    </Col>
+                    <Col xs={4} md={2} className="tech-icons">
+                       <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuQ5rT6_uK9sbQg806wuIJZccCZBriFs0874CRWdfZFHKUBfpwLsExJLWlZs_6MZ2K6sY&usqp=CAU' width={"59px"} alt='' />
+                    </Col>
+                    <Col xs={4} md={2} className="tech-icons">
+                       <img src='https://authy.com/wp-content/uploads/npm-logo.png' width={"59px"} alt='' />
+                    </Col>
+                    <Col xs={4} md={2} className="tech-icons">
+                       <img style={{borderRadius:"50%"}}  src='https://w1.pngwing.com/pngs/798/531/png-transparent-react-logo-npm-javascript-package-manager-nodejs-github-installation-yarn.png' width={"59px"} alt='' />
+                    </Col>
 
                 </Row>
             </div>

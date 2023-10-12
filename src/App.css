@@ -8,8 +8,13 @@
   }
 }
 
-#contact {
+body {
+
+  font-family: "Poppins";
 }
+
+
+#contact {}
 
 #mail-number {
 

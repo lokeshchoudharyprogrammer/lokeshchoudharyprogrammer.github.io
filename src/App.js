@@ -5,9 +5,9 @@ import Footer from './Components/Footer';
 import GithubCal from './Components/GithubCal';
 import Simple from './Components/Navbar';
 import Profile from './Components/Profile';
-import Projects from './Components/Projects';
 import Resume from './Components/Resume';
 import Skills from './Components/Skills';
+import ProjectTimeline from './Components/ProjectTimeline';
 
 function App() {
   return (
@@ -15,11 +15,12 @@ function App() {
       <Simple />
       <Profile />
       <Skills />
-      <Projects />
+      <ProjectTimeline />
       <GithubCal />
       <Resume />
       <Contactus />
       <Footer />
+
     </>
   );
 }

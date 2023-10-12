@@ -5,7 +5,7 @@ import { FiMail, FiPhone } from "react-icons/fi"; // Import Chakra UI icons
 
 const Contactus = () => {
     const contactBoxStyles = {
-        width: "500px",
+        width: "362px",
         margin: "auto",
         backgroundColor: "white",
         borderRadius: "10px",

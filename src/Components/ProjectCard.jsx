@@ -41,7 +41,8 @@ function ProjectCards(props) {
 
                 </div>
                 <div>
-                    <p style={{ color: "black" }} className='skills-card'>{
+
+                    <p style={{ color: "black", display: "flex", gap: "12px", flexFlow: "warp" }} className='skills-card'>{
 
                         myArray && myArray.map((item, index) => (
                             <Label as='a' color='blue'>

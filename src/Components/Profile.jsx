@@ -33,7 +33,7 @@ const Profile = () => {
                             <strong className="main-name"> 𝐿𝑜𝓀𝑒𝓈𝒽 𝒞𝒽𝑜𝓊𝒹𝒽𝒶𝓇𝓎</strong>
                         </h1>
                         <h1 id ='user-detail-intro' style={{ color: "black", paddingLeft: "30px", paddingTop: '15px', fontWeight: '600' }}>
-                            I'm a skilled MERN developer with 1200 hours of coding experience and expertise in prompt engineering for AI systems like GPT-3.5. My focus is on building dynamic web applications and I'm eager to contribute my skills to innovative organizations that value growth and innovation. Passionate about pushing technological boundaries, I'm committed to delivering exceptional results in both web development and AI integration.
+                        Experienced MERN developer and AI enthusiast with 1200+ coding hours, dedicated to pushing technological boundaries, building dynamic web applications, and delivering exceptional results in web development and AI integration.
                         </h1>
 
                         <Row style={{ justifyContent: "center", position: "relative", display: "flex", marginTop: "20px" }}>

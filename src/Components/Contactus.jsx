@@ -1,50 +1,117 @@
-import React, { useRef, useState } from 'react'
-import emailjs from "@emailjs/browser";
-import githubicon from "../Img/icons8-github-64.png"
-import linkdinicon from "../Img/icons8-linkedin-48.png"
-const Contactus = () => {
-    const form = useRef();
-    const [name, Setname] = useState()
-    const [lastname, Setlastname] = useState()
-    const [email, Setemail] = useState()
-    const [numbers, Setnumbers] = useState()
-    const [sms, Setsms] = useState()
-    const data = {
-        name, lastname, email, numbers, sms
-    }
-  
-    const handleSubmit = (e) => {
+import { Box, Link, Text, Flex, Spacer, IconButton, Tooltip } from "@chakra-ui/react";
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import the icons
+import { Icon } from "@chakra-ui/icons";
+import { FiMail, FiPhone } from "react-icons/fi"; // Import Chakra UI icons
 
-        e.preventDefault();
-        emailjs.sendForm("service_yweolvv", "template_5ql7boh", form.current, "nPptKc2p8FHQK4bpw").then(
-            (result) => {
-                alert("Message Sent Successfully");
-                console.log(result.text);
-            },
-            (error) => {
-                console.log(error.text);
-            }
-        );
+const Contactus = () => {
+    const contactBoxStyles = {
+        width: "500px",
+        margin: "auto",
+        backgroundColor: "white",
+        borderRadius: "10px",
+        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+        padding: "20px",
+        transition: "transform 0.2s, box-shadow 0.2s",
+        _hover: {
+            transform: "scale(1.02)",
+            boxShadow: "0px 8px 12px rgba(0, 0, 0, 0.2)",
+        },
+        marginTop:"44px",
+        marginBottom:"25px"
     };
+
+    const labelStyles = {
+        fontWeight: "bold",
+        textAlign: "center"
+
+    };
+
+    const iconStyles = {
+        boxSize: 8,
+        color: "blue.500",
+    };
+
+    const linkStyles = {
+        color: "blue.500",
+        textDecoration: "none",
+        _hover: {
+            color: "blue.600",
+        },
+    };
+
     return (
         <>
-            <h1 className="project-heading" id='contact' style={{ color: ' #c110ef', paddingLeft: "39px", marginTop: "65px" }}>
-                <strong className="purple"> Contact </strong>
-            </h1>
-            <div id="contact">
-                <a id="contact-linkedin" href="https://www.linkedin.com/in/lokeshchoudharyprogrammer/" target="_blank">
-                    <img width="60px" src={githubicon} alt='' />
 
-                </a>
-                <a href="https://github.com/lokeshchoudharyprogrammer" target="_blank">
-                    <img width="60px" id="contact-github" src={linkdinicon} alt='' />
+            <Box style={contactBoxStyles}  id='contact' >
+                <Text style={labelStyles} fontSize="2xl" mb={4}>
+                    Contact Me
+                </Text>
+                <Flex alignItems="center" mt={3}>
+                    <Tooltip label="GitHub" hasArrow placement="top">
+                        <IconButton
+                            as={Link}
+                            href="https://github.com/lokeshchoudharyprogrammer"
+                            id="contact-github"
+                            style={linkStyles}
+                            icon={<FaGithub style={iconStyles} />}
+                            aria-label="GitHub"
+                        />
+                    </Tooltip>
+                    <Spacer />
+                    <Link href="https://github.com/lokeshchoudharyprogrammer" id="contact-github" style={linkStyles}>
+                        Lokesh Choudhary
+                    </Link>
+                </Flex>
+                <Flex alignItems="center" mt={3}>
+                    <Tooltip label="LinkedIn" hasArrow placement="top">
+                        <IconButton
+                            as={Link}
+                            href="https://www.linkedin.com/in/lokeshchoudharyprogrammer/"
+                            id="contact-linkedin"
+                            style={linkStyles}
+                            icon={<FaLinkedin style={iconStyles} />}
+                            aria-label="LinkedIn"
+                        />
+                    </Tooltip>
+                    <Spacer />
+                    <Link href="https://www.linkedin.com/in/lokeshchoudharyprogrammer/" id="contact-linkedin" style={linkStyles}>
+                        Lokesh Choudhary
+                    </Link>
+                </Flex>
+                <Flex alignItems="center" mt={3}>
+                    <Tooltip label="Phone" hasArrow placement="top">
+                        <IconButton
+                            as={Link}
+                            href="tel:+916377300329"
+                            id="contact-phone"
+                            style={linkStyles}
+                            icon={<FiPhone style={iconStyles} />}
+                            aria-label="phone"
+                        />
+                    </Tooltip>
+                    <Spacer />
+                    <Link href="tel:+916377300329" id="contact-phone" style={linkStyles}>
+                        +916377300329
+                    </Link>
+                </Flex>
+                <Flex alignItems="center" mt={3}>
+                    <Tooltip label="Email" hasArrow placement="top">
+                        <IconButton
+                            as={Link}
+                            href="mailto:lokeshchoudhary2026@gmail.com"
+                            id="contact-email"
+                            style={linkStyles}
+                            icon={<FiMail style={iconStyles} />}
+                            aria-label="Email"
+                        />
+                    </Tooltip>
+                    <Spacer />
+                    <Link href="mailto:lokeshchoudhary2026@gmail.com" id="contact-email" style={linkStyles}>
+                        lokeshchoudhary2026@gmail.com
+                    </Link>
+                </Flex>
 
-                </a>
-            </div>
-            <div class='mail-number'>
-                <h3 class="chakra-heading css-9f6g39" id="contact-phone"> Mobile No : +91 6377300329</h3>
-                <h3 class="chakra-heading css-9f6g39" id="contact-email">Email : lokeshchoudhary2026@gmail.com</h3>
-            </div>
+            </Box>
         </>
     )
 }

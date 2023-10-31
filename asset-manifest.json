@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.34031235.css",
-    "main.js": "/static/js/main.b5cd81d0.js",
+    "main.js": "/static/js/main.bcc6bfd7.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/lokesh-choudhary-resume.pdf": "/static/media/lokesh-choudhary-resume.7c3b671b66c61aa1b013.pdf",
     "static/media/poppins-devanagari-400-italic.woff": "/static/media/poppins-devanagari-400-italic.08359c079f3cb3015ed5.woff",
@@ -18,11 +18,11 @@
     "static/media/poppins-latin-ext-400-normal.woff2": "/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
     "index.html": "/index.html",
     "main.34031235.css.map": "/static/css/main.34031235.css.map",
-    "main.b5cd81d0.js.map": "/static/js/main.b5cd81d0.js.map",
+    "main.bcc6bfd7.js.map": "/static/js/main.bcc6bfd7.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34031235.css",
-    "static/js/main.b5cd81d0.js"
+    "static/js/main.bcc6bfd7.js"
   ]
 }

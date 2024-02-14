@@ -60,7 +60,7 @@ export default function Simple() {
                     <Box> 𝐿𝒞</Box>
                     <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
 
-                        <NavLink href={'#about'}>Home</NavLink>
+                        <NavLink href={'#about '}>Home</NavLink>
                         <NavLink href={'#about'}>About</NavLink>
                         <NavLink href={'#skills'}>Skills</NavLink>
                         <NavLink href={'#projects'}>Project</NavLink>

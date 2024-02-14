@@ -16,8 +16,8 @@ const Contactus = () => {
             transform: "scale(1.02)",
             boxShadow: "0px 8px 12px rgba(0, 0, 0, 0.2)",
         },
-        marginTop:"44px",
-        marginBottom:"25px"
+        marginTop: "44px",
+        marginBottom: "25px"
     };
 
     const labelStyles = {
@@ -42,7 +42,7 @@ const Contactus = () => {
     return (
         <>
 
-            <Box style={contactBoxStyles}  id='contact' >
+            <Box style={contactBoxStyles} id='contact' >
                 <Text style={labelStyles} fontSize="2xl" mb={4}>
                     Contact Me
                 </Text>
@@ -55,10 +55,11 @@ const Contactus = () => {
                             style={linkStyles}
                             icon={<FaGithub style={iconStyles} />}
                             aria-label="GitHub"
+                            target="_blank"
                         />
                     </Tooltip>
                     <Spacer />
-                    <Link href="https://github.com/lokeshchoudharyprogrammer" id="contact-github" style={linkStyles}>
+                    <Link href="https://github.com/lokeshchoudharyprogrammer" target="_blank" id="contact-github" style={linkStyles}>
                         Lokesh Choudhary
                     </Link>
                 </Flex>
@@ -71,10 +72,11 @@ const Contactus = () => {
                             style={linkStyles}
                             icon={<FaLinkedin style={iconStyles} />}
                             aria-label="LinkedIn"
+                            target="_blank"
                         />
                     </Tooltip>
                     <Spacer />
-                    <Link href="https://www.linkedin.com/in/lokeshchoudharyprogrammer/" id="contact-linkedin" style={linkStyles}>
+                    <Link href="https://www.linkedin.com/in/lokeshchoudharyprogrammer/" target="_blank" id="contact-linkedin" style={linkStyles}>
                         Lokesh Choudhary
                     </Link>
                 </Flex>

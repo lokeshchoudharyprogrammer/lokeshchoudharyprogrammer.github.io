@@ -64,6 +64,20 @@ function Projects() {
                     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                         <Col md={4} className="project-card">
                             <ProjectCards
+                                imgPath={'https://img.freepik.com/free-vector/business-hand-drawn-e-commerce-landing-page_23-2149600513.jpg'}
+                                isBlog={false}
+                                title="Zimika E-commerce "
+                                description="AI ERA: Empowering e-commerce with AI tools for data extraction, validation, conversion, manipulation, security, image processing, smart generation, and standard data management."
+                                ghLink="https://github.com/lokeshchoudharyprogrammer/ecommerce-app"
+                                demoLink="https://unrivaled-tulumba-195798.netlify.app/"
+                                myArrayProp={myArray}
+                            />
+                        </Col>
+
+                    </Row>
+                    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                        <Col md={4} className="project-card">
+                            <ProjectCards
                                 imgPath={'https://camo.githubusercontent.com/76c562e2c3b1559dd40eb41723210165de31ef9cce213da2fb50d1c7a5a2de3e/68747470733a2f2f692e6962622e636f2f726378565648432f63616c6c6170702e706e67'}
                                 isBlog={false}
                                 title="Infinity Call"
